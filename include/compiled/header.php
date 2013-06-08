@@ -15,7 +15,7 @@
 			<?php }?>
 		</div>
 		<ul class="nav cf"><?php echo current_frontend(); ?></ul>
-		<div class="refer">&raquo;&nbsp;<a href="/subscribe.php">Email subscribe</a>&nbsp;&nbsp;&nbsp;&raquo;&nbsp;<a href="/account/invite.php">Invite friends</a>&nbsp;&nbsp;&nbsp;&raquo;&nbsp;<a id="verify-coupon-id" href="javascript:;"><?php echo $INI['system']['couponname']; ?> verify & consumption register</a>
+		<div class="refer">&raquo;&nbsp;<a href="/subscribe.php">Subscribe</a>&nbsp;&nbsp;&nbsp;&raquo;&nbsp;<a href="/account/invite.php">Invite</a>&nbsp;&nbsp;&nbsp;&raquo;&nbsp;<a id="verify-coupon-id" href="javascript:;"><?php echo $INI['system']['couponname']; ?> Redemption</a>
 		</div>
 		<?php if($login_user){?>
 		<div class="logins">

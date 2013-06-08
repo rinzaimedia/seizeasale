@@ -237,7 +237,7 @@ dd#bd{position:relative;z-index:1;width:960px;margin:0 auto;padding:30px 0 65px;
 #signup .field .f-cityname{width:100px;color:#333;}
 #signup .enter-city{float:left;margin-top:3px;*margin-top:0;margin-left:15px;color:#333;}
 #signup .subscribe{width:200px;margin-left:110px;*margin-left:107px;padding-bottom:0;margin-top:5px;}
-#signup .subscribe label{width:150px;margin-top:0;*margin-top:2px;height:20px;line-height:20px;font-size:12px;text-align:left;padding-left:3px;}
+#signup .subscribe label{width:200px;margin-top:0;*margin-top:2px;height:20px;line-height:20px;font-size:12px;text-align:left;padding-left:3px;}
 #signup .act{margin-top:10px;*margin-top:0;}
 #signuped .sect{width:auto;padding:50px 50px 50px;}
 #signuped .notice-content{padding:5px 0;color:#666;}

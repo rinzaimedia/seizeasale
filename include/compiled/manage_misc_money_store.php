@@ -19,7 +19,7 @@
 				</div>
                 <div class="sect">
 					<table id="orders-list" cellspacing="0" cellpadding="0" border="0" class="coupons-table">
-						<tr><th width="200">Email/username</th><th width="100">action</th><th width="160">amount</th><th width="200">operator</th><th width="200"><?php echo $action; ?>date</th></tr>
+						<tr><th width="200">Email/username</th><th width="100">action</th><th width="160">amount</th><th width="200">操作员</th><th width="200"><?php echo $action; ?>时间</th></tr>
 					<?php if(is_array($flows)){foreach($flows AS $index=>$one) { ?>
 						<tr <?php echo $index%2?'':'class="alt"'; ?>>
 							<td nowrap><?php echo $users[$one['user_id']]['email']; ?><br/><?php echo $users[$one['user_id']]['username']; ?></td>

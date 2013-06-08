@@ -2,7 +2,19 @@
 	<div class="deal-share-top">
 		<div class="deal-share-links">
 			<h4>Share to:</h4>
-			<ul class="cf"><li><a class="im" href="javascript:void(0);" id="deal-share-im">MSN/QQ</a></li><li><a class="kaixin" href="<?php echo share_kaixin($team); ?>" target="_blank">Kaixin</a></li><li><a class="renren" href="<?php echo share_renren($team); ?>" target="_blank">人人</a></li><li><a class="douban" href="<?php echo share_douban($team); ?>" target="_blank">douban</a></li><li><a class="sina" href="<?php echo share_sina($team); ?>" target="_blank">sina</a></li><li><a class="email" href="<?php echo share_mail($team); ?>" id="deal-buy-mailto">Email</a></li></ul>
+			<ul class="cf"><li>
+                    <a class="im" href="javascript:void(0);" id="deal-share-im">MSN/QQ</a>
+                </li><li>
+                    <a class="kaixin" href="<?php echo share_facebook($team); ?>" target="_blank">Facebook</a>
+                </li><li>
+                    <a class="renren" href="<?php echo share_renren($team); ?>" target="_blank">Twitter</a>
+                </li><li>
+                    <a class="douban" href="<?php echo share_douban($team); ?>" target="_blank">Google+</a>
+                </li><li>
+                    <a class="sina" href="<?php echo share_sina($team); ?>" target="_blank">sina</a>
+                </li><li>
+                    <a class="email" href="<?php echo share_mail($team); ?>" id="deal-buy-mailto">Email</a>
+                </li></ul>
 		</div>
 	</div>
 	<div class="deal-share-fix"></div>

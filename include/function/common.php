@@ -347,6 +347,27 @@ function share_kaixin($team) {
 	return 'http://www.kaixin001.com/repaste/share.php?'.$query;
 }
 
+function share_facebook($team) {
+    global $login_user_id;
+    global $INI;
+    if ($team) {
+        $query = array(
+            'rurl' => $INI['system']['wwwprefix'] ."/team.php?id={$team['id']}&r={$login_user_id}",
+            'rtitle' => $team['title'],
+            'rcontent' => strip_tags($team['summary']),
+        );
+    }
+    else {
+        $query = array(
+            'rurl' => $INI['system']['wwwprefix'] . "/r.php?r={$login_user_id}",
+            'rtitle' => $INI['system']['sitename'] . '(' .$INI['system']['wwwprefix']. ')',
+            'rcontent' => $INI['system']['sitename'] . '(' .$INI['system']['wwwprefix']. ')',
+        );
+    }
+    $query = http_build_query($query);
+    return 'http://www.facebook.com/sharer.php?u='.$query;
+}
+
 function share_douban($team) {
 	global $login_user_id;
 	global $INI;

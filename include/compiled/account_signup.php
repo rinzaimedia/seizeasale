@@ -7,7 +7,7 @@
         <div class="box">
             <div class="box-top"></div>
             <div class="box-content">
-                <div class="head"><h2>Register</h2><span>&nbsp;or<a href="/account/login.php">Login</a></span></div>
+                <div class="head"><h2>Register</h2><span>&nbsp;or&nbsp;<a href="/account/login.php">Login</a></span></div>
                 <div class="sect">
                     <form id="signup-user-form" method="post" action="/account/signup.php" class="validator">
                         <div class="field email">

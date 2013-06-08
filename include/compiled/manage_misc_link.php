@@ -33,7 +33,7 @@
 						<td><?php echo $one["url"]; ?></td>
 						<td><?php echo $one["logo"]; ?></td>
 						<td><?php echo $one["sort_order"]; ?></td>
-						<td align="center"><a href="/ajax/misc.php?action=linkremove&id=<?php echo $one['id']; ?>" ask="really remove it？" class="ajaxlink">remove</a>｜<a href="/ajax/misc.php?action=link&id=<?php echo $one['id']; ?>" class="ajaxlink">编辑</a></td>
+						<td align="center"><a href="/ajax/misc.php?action=linkremove&id=<?php echo $one['id']; ?>" ask="确定删除本友情链接？" class="ajaxlink">删除</a>｜<a href="/ajax/misc.php?action=link&id=<?php echo $one['id']; ?>" class="ajaxlink">编辑</a></td>
 					  </tr>
 				<?php }}?>
 					<tr><td colspan="6"><?php echo $pagestring; ?></td></tr>

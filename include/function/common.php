@@ -368,6 +368,29 @@ function share_facebook($team) {
     return 'http://www.facebook.com/sharer.php?u='.$query;
 }
 
+function share_twitter($team) {
+    global $login_user_id;
+    global $INI;
+    if ($team) {
+        $query = array(
+            'url' => $INI['system']['wwwprefix'] ."/team.php?id={$team['id']}&r={$login_user_id}",
+            'text' => "Check this out! ".$team['title'],
+            'rcontent' => strip_tags($team['summary']),
+        );
+    }
+    else {
+        $query = array(
+            'url' => $INI['system']['wwwprefix'] . "/r.php?r={$login_user_id}",
+            'text' => $INI['system']['sitename'] . '(' .$INI['system']['wwwprefix']. ')',
+            'rcontent' => $INI['system']['sitename'] . '(' .$INI['system']['wwwprefix']. ')',
+        );
+    }
+    $query = http_build_query($query);
+    return 'http://twitter.com/share?u='.$query;
+}
+
+
+
 function share_douban($team) {
 	global $login_user_id;
 	global $INI;

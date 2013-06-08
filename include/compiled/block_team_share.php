@@ -7,11 +7,19 @@
                 </li><li>
                     <a class="kaixin" href="<?php echo share_facebook($team); ?>" target="_blank">Facebook</a>
                 </li><li>
-                    <a class="renren" href="<?php echo share_renren($team); ?>" target="_blank">Twitter</a>
+                    <a class="renren" href="<?php echo share_twitter($team); ?>" target="_blank">Twitter</a>
                 </li><li>
-                    <a class="douban" href="<?php echo share_douban($team); ?>" target="_blank">Google+</a>
-                </li><li>
-                    <a class="sina" href="<?php echo share_sina($team); ?>" target="_blank">sina</a>
+                    <!-- Place this tag where you want the share button to render. -->
+                    <div class="g-plus" data-action="share" data-annotation="none" data-height="15"></div>
+
+                    <!-- Place this tag after the last share tag. -->
+                    <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>&nbsp;&nbsp;
                 </li><li>
                     <a class="email" href="<?php echo share_mail($team); ?>" id="deal-buy-mailto">Email</a>
                 </li></ul>

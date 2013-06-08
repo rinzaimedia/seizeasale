@@ -45,7 +45,7 @@
 			</li>
 		</ul>
 		<div class="copyright">
-		<p>&copy;<span>2010</span>&nbsp;<?php echo $INI['system']['sitename']; ?> all rights reserved &nbsp;Powered by <a href="http://www.taodyp.com/" target="_blank">pinke</a> software.</p>
+		<p>&copy; <span><?php echo date('Y'); ?></span>&nbsp;<?php echo $INI['system']['sitename']; ?> all rights reserved.</p>
 	  </div>
 	</div>
 </div>
